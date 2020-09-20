@@ -1,0 +1,20 @@
+git init    				新建仓库
+git add .    			把所有的文件添加到“暂存区”
+git commit -m "add file"     		-message 提交参数，并且添加日志信息。把“暂存区”添加到本地仓库中
+git remote add origin "地址"		把本地仓库关联到一个远程仓库，名字叫做 origin , 并添加“地址”
+git remote -v   			查看关联的远程仓库
+git push origin master 		把本地仓库的推送到远程仓库origin上，推送master分支
+git clone "地址"			从远程仓库上克隆到本地
+git pull origin master 		从远程仓库origin上拉取最新的master分支内容
+
+git branch 			查看分支
+git branch 分支名			创建新分支
+git checkout 分支命			切换分支
+
+git status				查看状态
+git log --online			查看提交日志
+git log
+
+git merge	 分支命			在master分支中，合并分支。如果有冲突，在master中修改，重新add commit
+
+建立忽略文件 .gitignore		先建立 .gitignore文件，再创建 .git仓库
